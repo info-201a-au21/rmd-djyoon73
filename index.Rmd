@@ -1,0 +1,19 @@
+---
+title: "COVID Report"
+author: "DJ"
+date: "11/14/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+source("covid_data_for_rmd_exercise.R")
+
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## COVID Report
+I write a paragraph here. I will highlight that the total number of US cases is `r total_cases`, and the total number of US deaths is `r total_deaths`. I also want to show the chart:
+``` {r echo=FALSE}
+cases_plot
+```
